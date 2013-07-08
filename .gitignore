@@ -1,0 +1,9 @@
+.vagrant/
+bin/
+obj/
+packages/
+tools/
+~build-output/
+www/
+
+*.suo

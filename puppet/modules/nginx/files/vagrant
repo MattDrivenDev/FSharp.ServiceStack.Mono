@@ -1,0 +1,9 @@
+server {
+    listen 80;  
+	location / {
+		root /var/www;		
+		index index.html index.htm;
+		fastcgi_pass unix:/tmp/SOCK-ServiceStack;
+		include /etc/nginx/fastcgi_params;
+	}
+}

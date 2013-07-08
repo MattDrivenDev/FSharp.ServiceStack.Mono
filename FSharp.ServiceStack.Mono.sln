@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_environment", "_environment", "{BDAD411E-3BF7-48C0-A420-7AE389E780F5}"
+	ProjectSection(SolutionItems) = preProject
+		Vagrantfile = Vagrantfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{4EC0E553-0FAE-470C-B72B-DFD233239B19}"
+	ProjectSection(SolutionItems) = preProject
+		fake.cmd = fake.cmd
+		fakefile.fsx = fakefile.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9137C014-97EE-42F5-8C86-0EB4B56F33EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "puppet", "puppet", "{BE079317-A748-4737-A85C-671E76A8D3C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "manifests", "manifests", "{A4C0E951-8F47-48A8-B9D2-1F08593F8DDC}"
+	ProjectSection(SolutionItems) = preProject
+		puppet\manifests\init.pp = puppet\manifests\init.pp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{36871F8E-E613-47A1-87FB-76216D0F1DA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{4065E3DE-FE06-46D1-B76E-C7C6FC8C6175}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{F9595C3A-B22C-4CE9-80D7-CEE25B4BD08C}"
+	ProjectSection(SolutionItems) = preProject
+		puppet\modules\nginx\files\vagrant = puppet\modules\nginx\files\vagrant
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\WebApi\WebApi.csproj", "{C2B0E8F7-C72E-4D42-95A6-18D033931F88}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.WebApi", "src\FSharp.WebApi\FSharp.WebApi.fsproj", "{1971335F-15F3-4E4D-A78C-B6EF8CB82EDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_docs", "_docs", "{6D9D668D-4308-4C3C-B9FD-D51C55BB5CC9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B0E8F7-C72E-4D42-95A6-18D033931F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B0E8F7-C72E-4D42-95A6-18D033931F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B0E8F7-C72E-4D42-95A6-18D033931F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B0E8F7-C72E-4D42-95A6-18D033931F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1971335F-15F3-4E4D-A78C-B6EF8CB82EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1971335F-15F3-4E4D-A78C-B6EF8CB82EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1971335F-15F3-4E4D-A78C-B6EF8CB82EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1971335F-15F3-4E4D-A78C-B6EF8CB82EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE079317-A748-4737-A85C-671E76A8D3C0} = {BDAD411E-3BF7-48C0-A420-7AE389E780F5}
+		{C2B0E8F7-C72E-4D42-95A6-18D033931F88} = {9137C014-97EE-42F5-8C86-0EB4B56F33EC}
+		{1971335F-15F3-4E4D-A78C-B6EF8CB82EDD} = {9137C014-97EE-42F5-8C86-0EB4B56F33EC}
+		{A4C0E951-8F47-48A8-B9D2-1F08593F8DDC} = {BE079317-A748-4737-A85C-671E76A8D3C0}
+		{36871F8E-E613-47A1-87FB-76216D0F1DA4} = {BE079317-A748-4737-A85C-671E76A8D3C0}
+		{4065E3DE-FE06-46D1-B76E-C7C6FC8C6175} = {36871F8E-E613-47A1-87FB-76216D0F1DA4}
+		{F9595C3A-B22C-4CE9-80D7-CEE25B4BD08C} = {4065E3DE-FE06-46D1-B76E-C7C6FC8C6175}
+	EndGlobalSection
+EndGlobal
