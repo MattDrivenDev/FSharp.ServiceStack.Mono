@@ -6,7 +6,7 @@ Phew!
 
 ## Instructions
 
-You'll need to ensure that you have [Oracle Virtual Box]()* and [Vagrant]() installed first. Plus obviously some **.NET** and **F#** development tools/libraries. 
+You'll need to ensure that you have [Oracle Virtual Box](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/) installed first. Plus obviously some **.NET** and **F#** development tools/libraries. 
 
 1. Clone this repo, and navigate to the working directory.
 2. From a command line, run `fake build` - this will install any dependencies using nuget and then build the service and copy it into the `www/` directory.
@@ -17,4 +17,5 @@ In theory, everything will work a treat (works on my machine, haha).
 
 ## Thanks
 
-* [pip-devnull](http://pipe-devnull.com/) for some help with provisioning mono fastcgi with the correct user.
+* [pipe-devnull](http://pipe-devnull.com/) for some help with provisioning mono fastcgi with the correct user.
+
