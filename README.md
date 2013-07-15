@@ -15,6 +15,10 @@ You'll need to ensure that you have [Oracle Virtual Box](https://www.virtualbox.
 
 In theory, everything will work a treat (works on my machine, haha).
 
+## Branches
+
+There are a few branches of this repository that contain some changes to this, for example: the `with_mysql` contains some extra configuration to spin up a mysql database as part of the puppet configuration.
+
 ## Thanks
 
 * [pipe-devnull](http://pipe-devnull.com/) for some help with provisioning mono fastcgi with the correct user.
