@@ -37,6 +37,20 @@ service { "nginx":
     restart => "/usr/bin/sudo /etc/init.d/nginx restart",
 }
 
+class { 'mysql':
+	root_password => 'hellopassword',
+	require       => Exec['apt-get update'],
+}
+
+mysql::grant { 'servicestack':
+	mysql_privileges     => 'ALL',
+	mysql_db             => 'servicestack',
+	mysql_user           => 'servicestack',
+	mysql_password       => 'servicestackpw',
+	mysql_host           => 'localhost',
+	mysql_grant_filepath => '/home/vagrant/puppet-mysql',
+}
+
 file { "vagrant-nginx":
     path => "/etc/nginx/sites-available/default",
     ensure => file,
@@ -54,3 +68,4 @@ exec { "start-fastcgi-mono-server4":
 	require => File["vagrant-nginx"],
 }
 
+include mysql
