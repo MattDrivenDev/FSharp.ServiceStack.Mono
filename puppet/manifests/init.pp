@@ -42,9 +42,9 @@ class { 'mysql':
 	require       => Exec['apt-get update'],
 }
 
-mysql::grant { 'servicestack':
+mysql::grant { 'db1':
 	mysql_privileges     => 'ALL',
-	mysql_db             => 'servicestack',
+	mysql_db             => 'servicestackdb',
 	mysql_user           => 'servicestack',
 	mysql_password       => 'servicestackpw',
 	mysql_host           => 'localhost',
