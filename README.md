@@ -1,4 +1,4 @@
-# Service Stack, with F# on Linux 
+# Service Stack, with F# on Linux - with mysql
 
 A solution template to quickly help get up and running with [Service Stack](http://www.servicestack.net/) using [F#](http://fsharp.org/). Code is built using [FAKE](http://fsharp.github.io/FAKE/) and deployed to a local [Ubuntu Server](http://www.ubuntu.com/server) via [Vagrant](http://www.vagrantup.com/) - where it runs on [mono fastcgi and nginx](http://www.mono-project.com/FastCGI_Nginx)...
 
