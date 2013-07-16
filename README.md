@@ -8,7 +8,7 @@ Phew!
 
 You'll need to ensure that you have [Oracle Virtual Box](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/) installed first. Plus obviously some **.NET** and **F#** development tools/libraries. 
 
-1. Clone this repo, and navigate to the working directory.
+1. Clone this repo, and navigate to the working directory (make sure you checkout the `with_mysql` branch, and ensure you `git submodule update` as well...).
 2. From a command line, run `fake build` - this will install any dependencies using nuget and then build the service and copy it into the `www/` directory.
 3. From a command line, run `vagrant up` - this will provision you a local Ubuntu Server and use the Puppet scripts to set everything up. Your `www/` directory is shared with the new virtual machine, which is where the application runs from.
 4. Navigate to `localhost:8080` in your browser to test.
