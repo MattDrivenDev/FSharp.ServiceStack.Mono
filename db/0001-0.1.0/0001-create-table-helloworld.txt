@@ -1,0 +1,4 @@
+CREATE TABLE Helloworld (
+	HelloId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	ResponseText VARCHAR(50)
+);

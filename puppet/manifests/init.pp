@@ -51,6 +51,10 @@ mysql::grant { 'db1':
 	mysql_grant_filepath => '/home/vagrant/puppet-mysql',
 }
 
+exec { "deploy-database":
+    command => "/bin/bash /vagrant/db/deploy-all.sh",
+}
+
 file { "vagrant-nginx":
     path => "/etc/nginx/sites-available/default",
     ensure => file,

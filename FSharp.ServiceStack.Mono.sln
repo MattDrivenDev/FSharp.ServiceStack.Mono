@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{4EC0E5
 	ProjectSection(SolutionItems) = preProject
 		fake.cmd = fake.cmd
 		fakefile.fsx = fakefile.fsx
+		packages.config = packages.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9137C014-97EE-42F5-8C86-0EB4B56F33EC}"
@@ -39,6 +40,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_docs", "_docs", "{6D9D668D
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{98C0DD34-2A17-4093-88AE-D3F662C3CD73}"
+	ProjectSection(SolutionItems) = preProject
+		db\deploy-all.sh = db\deploy-all.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0001-0.1.0", "0001-0.1.0", "{681315C3-E330-45FB-81BA-E32F612FE548}"
+	ProjectSection(SolutionItems) = preProject
+		db\0001-0.1.0\0001-create-table-helloworld.txt = db\0001-0.1.0\0001-create-table-helloworld.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,5 +76,6 @@ Global
 		{36871F8E-E613-47A1-87FB-76216D0F1DA4} = {BE079317-A748-4737-A85C-671E76A8D3C0}
 		{4065E3DE-FE06-46D1-B76E-C7C6FC8C6175} = {36871F8E-E613-47A1-87FB-76216D0F1DA4}
 		{F9595C3A-B22C-4CE9-80D7-CEE25B4BD08C} = {4065E3DE-FE06-46D1-B76E-C7C6FC8C6175}
+		{681315C3-E330-45FB-81BA-E32F612FE548} = {98C0DD34-2A17-4093-88AE-D3F662C3CD73}
 	EndGlobalSection
 EndGlobal
