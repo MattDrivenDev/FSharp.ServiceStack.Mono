@@ -61,6 +61,7 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mono.fs" />
     <Compile Include="MySql.fs" />
     <Compile Include="HelloService.fs" />
     <Compile Include="Global.fs" />
