@@ -72,4 +72,6 @@ Vagrant.configure("2") do |config|
     puppet.manifest_file  = "init.pp"
   end
 
+  config.vm.provision :shell, :path => "./db/deploy-all.sh"
+
 end

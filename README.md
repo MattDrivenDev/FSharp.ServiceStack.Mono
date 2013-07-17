@@ -4,6 +4,10 @@ A solution template to quickly help get up and running with [Service Stack](http
 
 Phew!
 
+## 'with mysql'
+
+This branch of the repository uses a MySql database, which is provisioned using the same `puppet` scripts - the deployment of the database objects is done using the `shell` provisioner (configured in the `VagrantFile`). Communication with the MySql database uses standard `ADO.NET` with the [FsSql](https://github.com/mausch/FsSql) F# wrapper - via the official [MySql Connector/Net](http://dev.mysql.com/downloads/connector/net/). Both are pulled in via NuGet packages.
+
 ## Instructions
 
 You'll need to ensure that you have [Oracle Virtual Box](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/) installed first. Plus obviously some **.NET** and **F#** development tools/libraries. 

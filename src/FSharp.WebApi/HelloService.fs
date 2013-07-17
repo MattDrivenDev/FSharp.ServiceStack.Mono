@@ -16,8 +16,16 @@
 
     type HelloService() =
         inherit Service()
+
+        let saveAndRespond response = 
+            MySql.execNonQuery 
+                "insert into Helloworld (ResponseText) values (@responseText)"
+                [MySql.P("@responseText", response.Text)]
+            response
+
         member this.Get(helloRequest: HelloRequest) = 
             { Text = "Hello, world!" }
+            |> saveAndRespond
 
 
     type HelloServiceHost() = 
