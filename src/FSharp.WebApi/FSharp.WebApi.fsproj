@@ -32,9 +32,15 @@
     <DocumentationFile>bin\Release\FSharp.WebApi.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FsSql">
+      <HintPath>..\..\packages\FsSql\lib\FsSql.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\packages\MySql.Data\lib\net40\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack">
       <HintPath>..\..\packages\ServiceStack\lib\net35\ServiceStack.dll</HintPath>
@@ -51,9 +57,11 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mono.fs" />
     <Compile Include="HelloService.fs" />
     <Compile Include="Global.fs" />
   </ItemGroup>

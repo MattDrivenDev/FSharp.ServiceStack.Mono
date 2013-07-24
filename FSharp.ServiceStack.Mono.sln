@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{4EC0E5
 	ProjectSection(SolutionItems) = preProject
 		fake.cmd = fake.cmd
 		fakefile.fsx = fakefile.fsx
+		packages.config = packages.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9137C014-97EE-42F5-8C86-0EB4B56F33EC}"

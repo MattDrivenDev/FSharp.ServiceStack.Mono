@@ -16,6 +16,7 @@
 
     type HelloService() =
         inherit Service()
+
         member this.Get(helloRequest: HelloRequest) = 
             { Text = "Hello, world!" }
 

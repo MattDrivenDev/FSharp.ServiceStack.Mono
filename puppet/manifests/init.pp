@@ -17,13 +17,13 @@ exec { "apt-get update":
 }
 
 package { "mono-runtime":
-	ensure => present,
-	require => Exec["apt-get update"],
+    ensure => present,
+    require => Exec["apt-get update"],
 }
 
 package { "mono-fastcgi-server4":
-	ensure => present,
-	require => Package["mono-runtime"],
+    ensure => present,
+    require => Package["mono-runtime"],
 }
 
 package { "nginx":
@@ -47,10 +47,9 @@ file { "vagrant-nginx":
 }
 
 exec { "start-fastcgi-mono-server4":
-	logoutput => "on_failure",
+    logoutput => "on_failure",
     group => 'www-data',
     user => 'www-data',
-	command => "/usr/bin/fastcgi-mono-server4 /applications=/:/var/www /filename=/tmp/SOCK-ServiceStack /socket=unix &",
-	require => File["vagrant-nginx"],
+    command => "/usr/bin/fastcgi-mono-server4 /applications=/:/var/www /filename=/tmp/SOCK-ServiceStack /socket=unix &",
+    require => File["vagrant-nginx"],
 }
-
